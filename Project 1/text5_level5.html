@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text 5</title>
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Abril Fatface|Old Standard TT:regular,bold">
+  <style>
+
+    body{
+        background:#191528;
+        color:#ffd28a;
+    }
+
+    span.a{
+        font-size: 4lvh;
+        display: inline-block;
+        padding: 10px;
+        border: 1px solid #5e548e;
+        background-color: #ffdab9;
+        line-height: 1.5em;
+        margin: 5px;
+    }
+
+    .container {
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between;
+        align-items: stretch;
+        margin-left: 2%;
+        margin-left: 2%;
+        
+    }
+
+    .item {
+        position: relative;
+        width: 210px;
+        height: 125px;
+        /* display: inline-block; */
+        /* padding: 10px;
+        border: 1px solid #5e548e;
+        background-color: #ffdab9; */
+        text-align: center;
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin-top: 5px;
+        margin-bottom: 5px;
+        /* padding: 10px; */
+        
+    }
+
+    .image {
+        position: absolute;
+        top: -50%;
+        left: 100%;
+        transform: translateX(-115%);
+        width: 200px;
+        height: auto;
+
+    }
+
+    .text {
+        /* position: absolute; */
+        font-size: 3vh;
+        text-align: center;
+        color:aliceblue;
+
+    }
+
+    .item .image,
+    .item .text {
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .item .text {
+        position: absolute;
+        opacity: 0;
+    }
+
+    .item:hover .image {
+        opacity: 0;
+    }
+
+    .item:hover .text {
+        opacity: 1;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+        font-weight: 100;
+    }
+
+  </style>
+</head>
+<body>
+    <div>
+        <h1>
+            30 WAYS FOR YOU TO TELL THE FUTURE
+        </h1>
+        <h3>
+            some more do-able than others...
+        </h3>
+        <br></br>
+        <br></br>
+        <div class="container">
+
+            <div class="item">
+                <img src="assets/cloud.png" class="image" />
+                <div class="text"> Aeromancy </div>
+            </div>
+            <div class="item">
+                <img src="assets/flour.png" class="image" />
+                <div class="text"> Aleuromancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/entrails.png" class="image" />
+                <div class="text"> Anthropomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/bone.png" class="image" />
+                <div class="text"> Astrogalomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/axe.png" class="image" />
+                <div class="text"> Axinomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/arrows.png" class="image" />
+                <div class="text"> Belomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/book.png" class="image" />
+                <div class="text"> Bibliomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/cards.png" class="image" />
+                <div class="text"> Cartomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/mirror.png" class="image" />
+                <div class="text"> Catoptromancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/candle.png" class="image" />
+                <div class="text"> Ceromancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/hand.png" class="image" />
+                <div class="text"> Chiromancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/coins.png" class="image" />
+                <div class="text"> Cleromancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/ring.png" class="image" />
+                <div class="text"> Dactyliomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/geometry.png" class="image" />
+                <div class="text"> Geomancy
+                </div>
+            </div>
+            
+            <div class="item">
+                <img src="assets/spiral.png" class="image" />
+                <div class="text"> Gyromancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/wave.png" class="image" />
+                <div class="text"> Hydromancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/well.png" class="image" />
+                <div class="text"> Lecanomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/talisman.png" class="image" />
+                <div class="text"> Lithomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/skull.png" class="image" />
+                <div class="text"> Necromancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/sleep.png" class="image" />
+                <div class="text"> Oneiromancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/tag.png" class="image" />
+                <div class="text"> Onomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/egg.png" class="image" />
+                <div class="text"> Oomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/duck.png" class="image" />
+                <div class="text"> Ornithomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/leaves.png" class="image" />
+                <div class="text"> Phyllomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/rocks.png" class="image" />
+                <div class="text"> Psephomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/fire.png" class="image" />
+                <div class="text"> Pyromancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/wand.png" class="image" />
+                <div class="text"> Rhabdomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/scapula.png" class="image" />
+                <div class="text"> Spatulamancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/oracle.png" class="image" />
+                <div class="text"> Theomancy
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/twigs.png" class="image" />
+                <div class="text"> Xylomancy
+                </div>
+            </div>
+            <!-- 
+            <span class="a">
+                Oneiromancy
+            </span>
+            <span class="a">
+                Onomancy
+            </span>
+            <span class="a">
+                Oomancy
+            </span>
+            <span class="a">
+                Oneiromancy
+            </span>
+            <span class="a">
+                Ornithomancy
+            </span>
+            <span class="a">
+                Phyllomancy
+            </span>
+            <span class="a">
+                Psephomancy
+            </span>
+            <span class="a">
+                Pyromancy
+            </span>
+            <span class="a">
+                Rhabdomancy
+            </span>
+            <span class="a">
+                Spatulamancy
+            </span>
+            <span class="a">
+                Theomancy
+            </span>
+            <span class="a">
+                Xylomancy
+            </span> -->
+        </div>
+
+    </div>
+  
+</body>
+</html>
