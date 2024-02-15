@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotating Icosahedron</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: radial-gradient(circle, red, yellow, green);
+        }
+        .wrapper {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            filter: blur(20px);
+        }
+        .solid {
+            position: absolute;
+            width: 0;
+            height: 0;
+            animation: spin 16s infinite linear;
+            transform-style: preserve-3d;
+        }
+        .side {
+            position: absolute;
+            left: 0;
+            bottom: 50%;
+            border-bottom: 173.2051px solid rgb(255, 255, 255); /* $triheight */
+            border-left: 100px solid transparent; /* $triwidth */
+            border-right: 100px solid transparent; /* $triwidth */
+            transform-origin: 50% 0%;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            100% {
+                transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg);
+            }
+        }
+
+        /* Define individual sides */
+        .side:nth-child(1) {
+            transform: translateY(-57.11px) rotateY(0deg) rotateX(52.62deg); /* $vshift2, $tilt */
+            border-bottom-color: rgba(255, 0, 0, 0.4);
+        }
+        .side:nth-child(2) {
+            transform: translateY(-57.11px) rotateY(72deg) rotateX(52.62deg);
+            border-bottom-color: rgba(0, 255, 0, 0.4);
+        }
+        .side:nth-child(3) {
+            transform: translateY(-57.11px) rotateY(144deg) rotateX(52.62deg);
+            border-bottom-color: rgba(0, 0, 255, 0.4);
+        }
+        .side:nth-child(4) {
+            transform: translateY(-57.11px) rotateY(216deg) rotateX(52.62deg);
+            border-bottom-color: rgba(255, 255, 0, 0.4);
+        }
+        .side:nth-child(5) {
+            transform: translateY(-57.11px) rotateY(288deg) rotateX(52.62deg);
+            border-bottom-color: rgba(255, 0, 255, 0.4);
+        }
+        .side:nth-child(6) {
+            transform: translateY(115.526px) rotateY(36deg) rotateX(-52.62deg); /* $triheight / 2, $vshift2, $tilt */
+            border-bottom-color: rgba(0, 255, 255, 0.4);
+        }
+        .side:nth-child(7) {
+            transform: translateY(115.526px) rotateY(108deg) rotateX(-52.62deg);
+            border-bottom-color: rgba(255, 0, 128, 0.4);
+        }
+        .side:nth-child(8) {
+            transform: translateY(115.526px) rotateY(180deg) rotateX(-52.62deg);
+            border-bottom-color: rgba(128, 128, 128, 0.4);
+        }
+        .side:nth-child(9) {
+            transform: translateY(115.526px) rotateY(252deg) rotateX(-52.62deg);
+            border-bottom-color: rgba(128, 0, 255, 0.4);
+        }
+        .side:nth-child(10) {
+            transform: translateY(115.526px) rotateY(324deg) rotateX(-52.62deg);
+            border-bottom-color: rgba(0, 128, 128, 0.4);
+        }
+        .side:nth-child(11) {
+            transform: translateY(86.602px) rotateY(36deg) rotateZ(180deg) translateZ(170.1px) rotateX(-10.81deg);
+            border-bottom-color: rgba(255, 255, 255, 0.4);
+        }
+        .side:nth-child(12) {
+            transform: translateY(86.602px) rotateY(108deg) rotateZ(180deg) translateZ(170.1px) rotateX(-10.81deg);
+            border-bottom-color: rgba(0, 255, 128, 0.4);
+        }
+        .side:nth-child(13) {
+            transform: translateY(86.602px) rotateY(180deg) rotateZ(180deg) translateZ(170.1px) rotateX(-10.81deg);
+            border-bottom-color: rgba(128, 255, 0, 0.4);
+        }
+        .side:nth-child(14) {
+            transform: translateY(86.602px) rotateY(252deg) rotateZ(180deg) translateZ(170.1px) rotateX(-10.81deg);
+            border-bottom-color: rgba(128, 0, 128, 0.4);
+        }
+        .side:nth-child(15) {
+            transform: translateY(86.602px) rotateY(324deg) rotateZ(180deg) translateZ(170.1px) rotateX(-10.81deg);
+            border-bottom-color: rgba(128, 128, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="solid">
+            <!-- 20 sides -->
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+            <div class="side"></div>
+        </div>
+    </div>
+</
+
