@@ -22,6 +22,11 @@
         color: #0075FF;
     }
 
+    @keyframes change-color {
+        /* 0%   {color:#0075FF;} */
+        100% {color:red;}
+    }
+
     #title-container {
         display:flex;
         flex-direction: column;
@@ -74,8 +79,17 @@
         border-color: #0075FF;
         border-style: solid;
     }
+
+    
     ul {
         line-height: 40px;
+    }
+
+    div.text:hover {
+        animation-name: change-color;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
     }
 
   </style>
@@ -83,7 +97,7 @@
 <body>
     <div>
         <div id="title-container">
-            <div>
+            <div class="text">
                 MY FORTUNES FROM SENSO-JI <br /> 
                 
             </div>
@@ -94,19 +108,19 @@
 
         <div id="good-fortune-container">
             <div id="good-fortune-subcontainer">
-                <div>
+                <div class="text">
                     No.73 regular fortune
                 </div>
                 <br></br>
-                <div>
+                <div class="text">
                     Cloudy sky for a long period, finally gets clear, everything gets bright again. At the same time, the water gets clean and clear like no trouble is in our mind.
                 </div>
                 <br></br>
-                <div>
+                <div class="text">
                     Receiving a tare letter from far away, you find out you got success.
                 </div>
                 <br></br>
-                <div>
+                <div class="text">
                     Meeting a person unexpected, and by whose help, your request and desire will all be granted.
                 </div>
             </div>
@@ -125,19 +139,19 @@
 
         <div id="good-fortune-container">
             <div id="good-fortune-subcontainer">
-                <div>
+                <div class="text">
                     No.54 bad fortune
                 </div>
                 <br></br>
-                <div>
+                <div class="text">
                     Your body is one but with 2 different kind mind, so everything goes out of order.
                 </div>
                 <br></br>
-                <div>
+                <div class="text">
                     Just like lunar eclipses make the sky all dark, all will be at dark.
                 </div>
                 <br></br>
-                <div>
+                <div class="text">
                     Fortune approaches to you, but you can’t get to it. Just like a fish can’t meet water, there may be so many possibilities to be a bad case for you.
                 </div>
             </div>
