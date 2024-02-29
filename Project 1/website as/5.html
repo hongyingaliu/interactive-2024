@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alana's Webzine</title>
+  <style>
+    body{
+        /* background:#345fd4; */
+        color:#ffd28a;
+        height: 100%;
+        width: 100%;
+        background-image: url('map/row-2-column-3.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .edge-top{
+        /* background-color: #ffd28a; */
+        width: 100vw;
+        height: 6%;
+        top:0%;
+        position:absolute;
+    }
+    .edge-bottom{
+        /* background-color: #ffd28a; */
+        width: 100vw;
+        height: 6%;
+        top:94%;
+        position:absolute;
+    }
+    .edge-left{
+        /* background-color: #ffd28a; */
+        width: 10%;
+        height: 100vh;
+        top:0%;
+        position:absolute;
+    }
+    .edge-right{
+        /* background-color: #ffe0ad; */
+        width: 10%;
+        height: 100vh;
+        top: 0%;
+        left: 92%;
+        position:absolute;
+    }
+    .link:hover {
+        cursor: pointer;
+    }
+    /* .edge-top:hover {
+        cursor: pointer;
+    }
+    .edge-bottom:hover {
+        cursor: pointer;
+    }
+    .edge-left:hover {
+        cursor: pointer;
+    }
+    .edge-right:hover {
+        cursor: pointer;
+    } */
+
+    .link {
+        width: 100%;
+        height: 6%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #link-bottom {
+        top: 94%;
+        left: 0;
+    }
+
+    .vert-link {
+        width: 10%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .vert-link:hover {
+        cursor: pointer;
+    }
+
+    #link-right {
+        top: 0;
+        left: 92%;
+    }
+
+  </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "text">
+            CHOOSE A DIRECTION (can't go right)
+        </div>
+    </div>
+    <div class = "edge-top"> 
+        <a href="6.html" class="link" id="link-top"></a>
+    </div>
+    <div class = "edge-bottom"> 
+        <a href="7.html" class="link" id="link-bottom"></a>
+    </div>
+    <div class = "edge-left"> 
+        <a href="1.html" class="vert-link" id="link-left"></a>
+    </div>
+    <!-- <div class = "edge-right">
+        <a href="text5_level7.html" class="vert-link" id="link-right"></a>
+    </div> -->
+</body>
+</html>

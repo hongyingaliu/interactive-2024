@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alana's Webzine</title>
+  <style>
+    body{
+        background:#191528;
+        color:#ffd28a;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .edge-top{
+        /* background-color: #ffd28a; */
+        width: 100vw;
+        height: 20%;
+        top:0%;
+        position:absolute;
+    }
+    .edge-bottom{
+        /* background-color: #ffd28a; */
+        width: 100vw;
+        height: 20%;
+        top:80%;
+        position:absolute;
+    }
+    .edge-left{
+        /* background-color: #ffd28a; */
+        width: 16%;
+        height: 100vh;
+        top:0%;
+        position:absolute;
+    }
+    .edge-right{
+        /* background-color: #ffe0ad; */
+        width: 16%;
+        height: 100vh;
+        top: 0%;
+        left: 84%;
+        position:absolute;
+    }
+    .link:hover {
+        cursor: url('assets/star.png') 10 10, auto;
+    }
+    /* .edge-top:hover {
+        cursor: pointer;
+    }
+    .edge-bottom:hover {
+        cursor: pointer;
+    }
+    .edge-left:hover {
+        cursor: pointer;
+    }
+    .edge-right:hover {
+        cursor: pointer;
+    } */
+
+    .link {
+        width: 100%;
+        height: 20%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #link-bottom {
+        top: 80%;
+        left: 0;
+    }
+
+    .vert-link {
+        width: 16%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .vert-link:hover {
+        cursor: url('assets/star.png') 10 10, auto;
+    }
+
+    #link-right {
+        top: 0;
+        left: 84%;
+    }
+
+  </style>
+</head>
+<body>
+    <div class = "container">
+        <div class = "text">
+            CHOOSE A DIRECTION
+        </div>
+    </div>
+    <div class = "edge-top"> 
+        <a href="text5_level7.html" class="link" id="link-top"></a>
+    </div>
+    <div class = "edge-bottom"> 
+        <a href="text5_level7.html" class="link" id="link-bottom"></a>
+    </div>
+    <div class = "edge-left"> 
+        <a href="text5_level7.html" class="vert-link" id="link-left"></a>
+    </div>
+    <div class = "edge-right">
+        <a href="text5_level7.html" class="vert-link" id="link-right"></a>
+    </div>
+</body>
+</html>
