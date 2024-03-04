@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text 6</title>
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Abril Fatface|Old Standard TT:regular,bold">
+  <style>
+
+    body{
+        background:rgb(33, 33, 33);
+        color: palevioletred;
+        padding-top: 10px;
+        padding-right: 20%;
+        padding-bottom: 10px;
+        padding-left: 20%;
+    }
+
+    #bg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 540%;
+        z-index: -1;
+        background:#9EA93F;
+    }
+
+    .wrapper {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between;
+        align-items: stretch;
+        margin-left: 2%;
+        margin-left: 2%;
+    }
+
+    .regular{
+        font-family: "Old Standard TT";
+        font-size: 3vh;
+        vertical-align: baseline;
+    }
+    
+    .jane{
+        font-family: "Old Standard TT";
+        font-size: 3vh;
+        
+        color:#507143;
+    }
+
+    .highlight{
+/*         font-weight:600; */
+        font-family: "Abril Fatface";
+        font-size: 6vh;
+    }
+
+    .highlight:hover .bigtext{
+        opacity: 0;
+        transition: 1s;
+        transition-timing-function: ease-in-out;
+        padding-top: 200px;
+    }
+
+    .highlight:hover #callout{
+        color:#b6df21;
+        transition: 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .highlight:hover ~ #bg {
+        background: #507143;
+        transition: 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    #callout{
+        color:#507143;
+    }
+
+    .emphasis{
+        font-size: bold;
+        font-family: "Abril Fatface";
+        vertical-align: baseline;
+        transition: 2s;
+        transition-timing-function: ease;
+        
+    }
+
+    .emphasis:hover {
+        font-size: 70px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="wrapper">
+         <!--< <div> <span> <p> <a> <h1> <h2>, <h3>, <h4>, <h5>, <h6> 
+            <em>, <b>, <i>
+            <ul>, <ol>, <li> >-->
+        <div class="wanted">
+            Wanted
+        </div>
+        <div class="wanted">
+            People looking for answers on their love life
+        </div>
+        <div class="wanted">
+            <pre>
+                We are looking for people who want to learn more about their love life.
+
+                If you need help, whether you are in a relationship, a situationship, or single, try talking
+                to our expert psychic readers.
+
+                In just one reading, you'll learn more about yourself and the love you're looking for than you
+                could ever expect. 
+            </pre>
+        </div>
+        <!-- <br></br>
+
+        <div id="bg">
+        </div> -->
+
+    </div>
+  
+</body>
+</html>

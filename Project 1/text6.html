@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text 6</title>
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Abril Fatface|Old Standard TT:regular,bold">
+  <style>
+
+    body{
+        background:rgb(116, 57, 68);
+        color: palevioletred;
+        padding-top: 10px;
+        padding-right: 20%;
+        padding-bottom: 10px;
+        padding-left: 20%;
+    }
+
+    .wrapper {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* align-content: space-between; */
+        align-items: left;
+        height: 100vh;
+        margin-left: 2%;
+        margin-left: 2%;
+        filter: blur(2px);
+    }
+
+    .regular{
+        /* font-family: "Old Standard TT"; */
+        font-size: 4vh;
+        /* vertical-align: baseline; */
+    }
+    
+    .credit{
+        font-size: 2vh;  
+        /* color:#507143; */
+    }
+
+    .highlight{
+/*         font-weight:600; */
+        font-family: "Abril Fatface";
+        font-size: 6vh;
+    }
+
+    .highlight:hover .bigtext{
+        opacity: 0;
+        transition: 1s;
+        transition-timing-function: ease-in-out;
+        padding-top: 200px;
+    }
+
+    .highlight:hover #callout{
+        color:#b6df21;
+        transition: 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .highlight:hover ~ #bg {
+        background: #507143;
+        transition: 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    #callout{
+        color:#507143;
+    }
+
+    .emphasis{
+        font-size: bold;
+        font-family: "Abril Fatface";
+        vertical-align: baseline;
+        transition: 2s;
+        transition-timing-function: ease;
+        
+    }
+
+    .emphasis:hover {
+        font-size: 70px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="wrapper">
+         <!--< <div> <span> <p> <a> <h1> <h2>, <h3>, <h4>, <h5>, <h6> 
+            <em>, <b>, <i>
+            <ul>, <ol>, <li> >-->
+        <div class="regular">
+            just chewed on my lip until it bled and my mom said it’s okay it will heal in a few days. 
+            painfully reminded the body really does just heal itself over and over again. 
+            theres somebody whos been trying to save me all along and its me
+        </div>
+        <br></br>
+        <div class="credit">
+            <a href="https://www.tumblr.com/heavensghost/717608006905446400/just-chewed-on-my-lip-until-it-bled-and-my-mom">
+            heavensghost
+            </a>
+        </div>
+        <!-- <br></br>
+
+        <div id="bg">
+        </div> -->
+
+    </div>
+  
+</body>
+</html>
