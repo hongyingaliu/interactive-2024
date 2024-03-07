@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text 1</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico.png">
+  <link rel="stylesheet" href="navigation.css">
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Abril Fatface|Old Standard TT:regular,bold|Jacquarda Bastarda 9">
+  <style>
+    :root {
+            --primary-color: crimson; /* Define a primary color variable */
+        }
+    h3 {
+        color:antiquewhite;
+        font-size:18vh;
+        z-index: 1;
+    }
+    h4 {
+        color:antiquewhite;
+        font-size:18vh;
+        z-index: 1;
+        text-align: right;
+    }
+    body {
+        background-color: rgb(33, 33, 33);
+        color:crimson
+    }
+    .wrapper {
+        padding-top: 60px;
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        width: 96vw;
+        /* height: 100vh; */
+        box-sizing: border-box;
+        justify-content: start;
+        align-items: stretch;
+    }
+
+    h6 {
+        margin-left: 5%;
+        margin-right:5%;
+    }
+
+    h6 a{
+        color:antiquewhite;
+    }
+
+    #heart{
+        color:crimson;
+        font-size:26vh;
+        font-family: "Jacquarda Bastarda 9";
+    }
+
+    #black{
+        color:antiquewhite;
+        font-size:18vh;
+        font-family: "Jacquarda Bastarda 9";
+    }
+    #sleep{
+        color:crimson;
+        font-size:9lvh;
+        font-family: "Jacquarda Bastarda 9";
+    }
+    
+
+    p{
+        font-size:9lvh;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-left: 5%;
+        margin-right:5%;
+        max-width: 100%;
+    }
+
+    .blackhole{
+        position: relative;
+        display: inline-block;
+    }
+
+    .hole {
+        position: absolute;
+        top: -40%;
+        left: 100%;
+        transform: translateX(-100%);
+        width: 400px;
+        height: auto;
+        z-index: -1; /* This ensures the image stays behind the word */
+    }
+
+  </style>
+</head>
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <div>
+                <div>
+                    INDEX
+                </div>
+                <br></br>
+                <div class = "row">
+                    <div class = "invisible-box" id="box1">
+                        <!-- <a href="#">About</a> -->
+                    </div>
+                    <div class = "invisible-box" id="box1">
+                        <!-- <a href="#">About</a> -->
+                    </div>
+                    <div class = "box" id="box1">
+                        <a href="text3_final.html">Black Hole</a>
+                    </div>
+                    <div class = "box" id="box1">
+                        
+                        <a href="text6_final.html">chewed lip</a>
+                    </div>
+                    <div class = "invisible-box" id="box1">
+                        <!-- <a href="#">About</a> -->
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "box" id="box1">
+                        <a href="text2_final.html">Senso-ji</a>
+                    </div>
+                    <div class = "box" id="box1">
+                        <!-- Page 0 -->
+                        <a href="home.html">Home</a>
+                    </div>
+                    <div class = "box" id="box1">
+                        <a href="text8_final.html">Fortune Cookies</a>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "invisible-box" id="box1">
+                        <!-- Page 2 -->
+                        <!-- <a href="#">About</a> -->
+                    </div>
+                    <div class = "box" id="box1">
+                        <a href="text10_final.html">11 ways to bring luck into your home</a>
+                    </div>
+                    <div class = "box" id="box1">
+                        <a href="text5_final.html">30 ways for you to tell the future</a>
+                    </div>
+                    <div class = "box" id="box1">
+                        <a href="text3_final.html">Jane Eyre Chapter XIX</a>
+                        <!-- <a href="#">About</a> -->
+                    </div>
+                    <div class = "invisible-box" id="box1">
+                        <!-- <a href="#">About</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <span class="index" onclick="openNav()">? </span>
+    <!-- <div class = 'edge-top'> 
+        <a href="text6_final.html" class="link" id="link-top"></a>
+        <img src="assets/arrow.gif" class="arrow" id="arrow-top"/>
+        <img src="assets/arrow-1.png" class="arrow-static" id="arrow-top"/>
+    </div> -->
+    <div class = 'edge-bottom'> 
+        <a href="home.html" class="link" id="link-bottom"></a>
+        <img src="assets/arrow.gif" class="arrow" id="arrow-bottom"/>
+        <img src="assets/arrow-1.png" class="arrow-static" id="arrow-bottom"/>
+    </div>
+    <!-- <div class = "edge-left"> 
+        <a href="text1_final.html" class="vert-link" id="link-left"></a>
+        <img src="assets/arrow.gif" class="arrow" id="arrow-left"/>
+        <img src="assets/arrow-1.png" class="arrow-static" id="arrow-left"/>
+    </div> -->
+    <div class = "edge-right">
+        <a href="text6_final.html" class="vert-link" id="link-right"></a>
+        <img src="assets/arrow.gif" class="arrow" id="arrow-right"/>
+        <img src="assets/arrow-1.png" class="arrow-static" id="arrow-right"/>
+    </div>
+    <div class="wrapper">
+        <div>
+            <h3>
+                I feel a <span class="blackhole"> <span id="black"> black hole </span> <img src="assets/scribble.gif" class="hole"> </em> </span> in my <span id="heart"> heart. </span> 
+            </h3>
+            <h4>
+                What should I do?
+            </h4>
+        </div>
+        <div>
+            <p>
+                I recommend that you imagine (visualize) <em>pink light</em> going into your heart. 
+            </p>
+            <p>
+                It is the color of <i>u n c o n d i t i o n a l   l o v e.</i> 
+            </p>
+            <p>
+                Then imagine that <em>pink light</em> going all through your body and cells as well. 
+            </p>
+            <p>
+                Then around your body, and then into the room… 
+            </p>
+            <p>
+                then out into your neighborhood and into the community… 
+            </p>
+            <p>
+                filling up every corner… 
+            </p>
+            <p>
+                then into your state and the planet and the Universe. 
+            </p>
+            <p>
+                Breathe with eyes closed and relax
+                <br/>in the feeling of the <i>u n c o n d i t i o n a l   l o v e.</i>
+            </p>
+            <p id="sleep">
+                Then you may drift off to sleep. Sweet dreams!
+            </p>
+            <h6>
+                Answer by Linda Schiller-Hanna
+                <br></br><a href="https://www.quora.com/I-feel-a-black-hole-in-my-heart-What-should-I-do">original version</a>
+                <br></br>
+            </h6> 
+
+        </div>
+        <!-- <p>
+            I recommend that you imagine (visualize) <em>pink light</em> going into your heart. 
+            <br />It is the color of <i>u n c o n d i t i o n a l   l o v e.</i> 
+            <br></br>Let it sweep away all the pain and darkness you’ve been feeling. 
+            <br></br>Then imagine that <em>pink light</em> going all through <b>your body and cells</b> as well. 
+            <br />      Then around your body, and then into the room… 
+            <br />                  filling up every corner… 
+            <br />                             then out into your neighborhood and into the community… 
+            <br />                                                then into your state and the planet and the Universe. 
+            <br></br>Breathe with eyes closed and relax 
+            <br />in the feeling of the <i>u n c o n d i t i o n a l   l o v e.</i>
+            <b>
+            <br></br>Then you may drift 
+            <br></br>                                off 
+            <br></br>                                       to 
+            
+            <br></br>s
+            <br></br>l
+            <br></br>e
+            <br></br>
+            <br></br>e
+            <br></br>
+            <br></br>
+            <br></br>p. 
+            </b>
+        </p>
+        <p>
+            Sweet dreams!
+        </p>
+        <h6>
+            Answer by Linda Schiller-Hanna
+            <br></br><a href="https://www.quora.com/I-feel-a-black-hole-in-my-heart-What-should-I-do">original version</a>
+        </h6> -->
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+  
+</body>
+</html>
+</html>

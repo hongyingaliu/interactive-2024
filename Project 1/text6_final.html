@@ -1,29 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Alana's Webzine</title>
+  <title>Text 6</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico.png">
   <link rel="stylesheet" href="navigation.css">
   <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Jacquarda Bastarda 9">
+          href="https://fonts.googleapis.com/css?family=Abril Fatface|Old Standard TT:regular,bold|Jacquarda Bastarda 9">
   <style>
-    title {
-        display: none;
-    }
+    :root {
+            --primary-color: palevioletred; /* Define a primary color variable */
+        }
+
     body{
-        background:#191528;
-        color:#ffd28a;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
+        background:rgb(116, 57, 68);
+        color: palevioletred;
+        
     }
-    .container{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        z-index: -1;
+
+    .wrapper {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* align-content: space-between; */
+        align-items: left;
+        height: 100vh;
+        margin-left: 2%;
+        margin-left: 2%;
+        
+        padding-top: 10px;
+        padding-right: 20%;
+        padding-bottom: 10px;
+        padding-left: 20%;
+    }
+
+    .regular{
+        font-family: "Abril Fatface";
+        font-size: 4vh;
+        filter: blur(2px);
+        /* vertical-align: baseline; */
+    }
+    
+    .credit a{
+        font-size: 2vh;  
+        color:rgb(255, 189, 201);
+        filter: blur(1px);
+    }
+
+    .highlight{
+/*         font-weight:600; */
+        font-family: "Abril Fatface";
+        font-size: 6vh;
+    }
+
+    .highlight:hover .bigtext{
+        opacity: 0;
+        transition: 1s;
+        transition-timing-function: ease-in-out;
+        padding-top: 200px;
+    }
+
+    .highlight:hover #callout{
+        color:#b6df21;
+        transition: 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    .highlight:hover ~ #bg {
+        background: #507143;
+        transition: 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    #callout{
+        color:#507143;
+    }
+
+    .emphasis{
+        font-size: bold;
+        font-family: "Abril Fatface";
+        vertical-align: baseline;
+        transition: 2s;
+        transition-timing-function: ease;
+        
+    }
+
+    .emphasis:hover {
+        font-size: 70px;
     }
 
   </style>
@@ -90,36 +153,46 @@
         </div>
       </div>
     <span class="index" onclick="openNav()">? </span>
-    <div class = "container">
-        <div class = "subtext">
-            For those feeling lost...
-        </div>
-        <div class = "text">
-            CHOOSE A DIRECTION
-        </div>
-        <!-- <div class = "subtext">
-            (click when you see your cursor change)
-        </div> -->
-    </div>
-    <div class = 'edge-top'> 
-        <a href="text1_final.html" class="link" id="link-top"></a>
+    <!-- <div class = 'edge-top'> 
+        <a href="text6_final.html" class="link" id="link-top"></a>
         <img src="assets/arrow.gif" class="arrow" id="arrow-top"/>
         <img src="assets/arrow-1.png" class="arrow-static" id="arrow-top"/>
-    </div>
+    </div> -->
     <div class = 'edge-bottom'> 
-        <a href="text5_final.html" class="link" id="link-bottom"></a>
+        <a href="text8_final.html" class="link" id="link-bottom"></a>
         <img src="assets/arrow.gif" class="arrow" id="arrow-bottom"/>
         <img src="assets/arrow-1.png" class="arrow-static" id="arrow-bottom"/>
     </div>
     <div class = "edge-left"> 
-        <a href="text2_final.html" class="vert-link" id="link-left"></a>
+        <a href="text1_final.html" class="vert-link" id="link-left"></a>
         <img src="assets/arrow.gif" class="arrow" id="arrow-left"/>
         <img src="assets/arrow-1.png" class="arrow-static" id="arrow-left"/>
     </div>
-    <div class = "edge-right">
-        <a href="text8_final.html" class="vert-link" id="link-right"></a>
+    <!-- <div class = "edge-right">
+        <a href="text4_level6.html" class="vert-link" id="link-right"></a>
         <img src="assets/arrow.gif" class="arrow" id="arrow-right"/>
         <img src="assets/arrow-1.png" class="arrow-static" id="arrow-right"/>
+    </div> -->
+    <div class="wrapper">
+         <!--< <div> <span> <p> <a> <h1> <h2>, <h3>, <h4>, <h5>, <h6> 
+            <em>, <b>, <i>
+            <ul>, <ol>, <li> >-->
+        <div class="regular">
+            just chewed on my lip until it bled and my mom said it’s okay it will heal in a few days. 
+            painfully reminded the body really does just heal itself over and over again. 
+            theres somebody whos been trying to save me all along and its me
+        </div>
+        <br></br>
+        <div class="credit">
+            <a href="https://www.tumblr.com/heavensghost/717608006905446400/just-chewed-on-my-lip-until-it-bled-and-my-mom">
+            heavensghost
+            </a>
+        </div>
+        <!-- <br></br>
+
+        <div id="bg">
+        </div> -->
+
     </div>
     <script>
         function openNav() {
@@ -130,5 +203,6 @@
           document.getElementById("myNav").style.height = "0%";
         }
     </script>
+  
 </body>
 </html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text 8</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico.png">
+  <link rel="stylesheet" href="navigation.css">
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Abril Fatface|Old Standard TT:regular,bold|Jacquarda Bastarda 9">
+  <style>
+    :root {
+            --primary-color: palevioletred; /* Define a primary color variable */
+        }
+
+    body{
+        background:rgb(33, 33, 33);
+        color: var(--primary-color);
+    }
+
+    .wrapper {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: space-between;
+        align-items: stretch;
+        /* margin-left: 2%;
+        margin-left: 2%; */
+        width: 100vw;
+        padding-top: 60px;
+        /* padding-top: 10px;
+        padding-right: 10%;
+        padding-bottom: 10px;
+        padding-left: 10%; */
+    }
+
+    .fortune{
+        font-family: "Old Standard TT";
+        font-size: 20px;
+        position: absolute;
+        color:antiquewhite;
+        /* top: 50%;
+        left: 50%; */
+        /* transform: translate(-50%, -50%); */
+        /* left: 40%;
+        top: 14%; */
+        
+        opacity: 0%;
+        text-align: center;
+        /* vertical-align: baseline; */
+    }
+
+    h1 {
+        font-family: "Jacquarda Bastarda 9";
+        text-align: center;
+    }
+
+    .cookie1 {
+        position: absolute;
+        width: 400px;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards; 
+        /* left: 30%; */
+        
+        /* left: 50%;
+        transform: translate(51%); */
+        /* animation-duration: 6s;
+        animation-iteration-count: 1; */
+    }
+
+    .cookie2 {
+        position: absolute;
+        width: 400px;
+        /* left: 30%; */
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards; 
+        /* left: -50%;
+        transform: translate(-52%); */
+    }
+
+    .fortune_cookie {
+        position: relative;
+        width: 100vw;
+        height: 290px;
+        /* text-align: center; */
+        /* background-color: #ccc; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .fortune_cookie:hover .cookie1{
+        animation: cookie_open 4s forwards;
+    }
+    .fortune_cookie:hover .cookie2{
+        animation: cookie_right 4s forwards;
+    }
+    .fortune_cookie:hover .fortune{
+        animation: text 4s forwards;
+    }
+
+    @keyframes cookie_open {
+        0% {
+            /* left: 30%; */
+            transform: translate(0%) rotate(0deg);
+            opacity: 100%;
+            /* rotate:0; */
+
+        }
+        40% {
+            /* left: 10%; */
+            transform: translate(-80%) rotate(-40deg);
+            opacity: 90%;
+        }
+        60% {
+            transform: translate(-80%) rotate(-45deg);
+            opacity: 0%;
+        }
+        100% {
+            transform: translate(-80%) rotate(-45deg);
+            opacity: 0%;
+        }
+    }
+
+    @keyframes cookie_right {
+        0% {
+            transform: translate(0%) rotate(0deg);
+            opacity: 100%;
+            /* rotate:0; */
+
+        }
+        40% {
+            transform: translate(80%) rotate(40deg);
+            opacity: 90%;
+        }
+        60% {
+            transform: translate(80%) rotate(45deg);
+            opacity: 0%;
+        }
+        100% {
+            transform: translate(80%) rotate(45deg);
+            opacity: 0%;
+        }
+    }
+
+    @keyframes text {
+        0% {
+            opacity: 0%;
+        }
+        50% {
+            opacity: 50%;
+        }
+        65% {
+            opacity: 100%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+
+
+  </style>
+</head>
+<body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <div>
+                <div>
+                    INDEX
+                </div>
+                <br></br>
+                <div class = "row">
+                    <div class = "invisible-box" id="box1">
+                        <!-- <a href="#">About</a> -->
+                    </div>
+                    <div class = "invisible-box" id="box1">
+                        <!-- <a href="#">About</a> -->
+                    </div>
+                    <div class = "box" id="box1">
+                        <a href="text3_final.html">Black Hole</a>
+                    </div>
+                    <div class = "box" id="box1">
+                        
+                        <a href="text6_final.html">chewed lip</a>
+                    </div>
+                    <div class = "invisible-box" id="box1">
+                        <!-- <a href="#">About</a> -->
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "box" id="box1">
+                        <a href="text2_final.html">Senso-ji</a>
+                    </div>
+                    <div class = "box" id="box1">
+                        <!-- Page 0 -->
+                        <a href="home.html">Home</a>
+                    </div>
+                    <div class = "box" id="box1">
+                        <a href="text8_final.html">Fortune Cookies</a>
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "invisible-box" id="box1">
+                        <!-- Page 2 -->
+                        <!-- <a href="#">About</a> -->
+                    </div>
+                    <div class = "box" id="box1">
+                        <a href="text10_final.html">11 ways to bring luck into your home</a>
+                    </div>
+                    <div class = "box" id="box1">
+                        <a href="text5_final.html">30 ways for you to tell the future</a>
+                    </div>
+                    <div class = "box" id="box1">
+                        <a href="text3_final.html">Jane Eyre Chapter XIX</a>
+                        <!-- <a href="#">About</a> -->
+                    </div>
+                    <div class = "invisible-box" id="box1">
+                        <!-- <a href="#">About</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <span class="index" onclick="openNav()">? </span>
+    <div class = 'edge-top'> 
+        <a href="text6_final.html" class="link" id="link-top"></a>
+        <img src="assets/arrow.gif" class="arrow" id="arrow-top"/>
+        <img src="assets/arrow-1.png" class="arrow-static" id="arrow-top"/>
+    </div>
+    <div class = 'edge-bottom'> 
+        <a href="text3_final.html" class="link" id="link-bottom"></a>
+        <img src="assets/arrow.gif" class="arrow" id="arrow-bottom"/>
+        <img src="assets/arrow-1.png" class="arrow-static" id="arrow-bottom"/>
+    </div>
+    <div class = "edge-left"> 
+        <a href="home.html" class="vert-link" id="link-left"></a>
+        <img src="assets/arrow.gif" class="arrow" id="arrow-left"/>
+        <img src="assets/arrow-1.png" class="arrow-static" id="arrow-left"/>
+    </div>
+    <!-- <div class = "edge-right">
+        <a href="text4_level6.html" class="vert-link" id="link-right"></a>
+        <img src="assets/arrow.gif" class="arrow" id="arrow-right"/>
+        <img src="assets/arrow-1.png" class="arrow-static" id="arrow-right"/>
+    </div> -->
+    <div class="wrapper">
+         <!--< <div> <span> <p> <a> <h1> <h2>, <h3>, <h4>, <h5>, <h6> 
+            <em>, <b>, <i>
+            <ul>, <ol>, <li> >-->
+        <h1>
+            Choose Fortune Cookies
+        </h1>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                Your shoes will make you happy today.
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                Today it's up to you to create the peacefulness you long for.
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                Your high-minded principles spell success.
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                Hard work pays off in the future, laziness pays off now.
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                Enjoy the good luck a companion brings you.
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                People are naturally attracted to you.
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                Land is always on the mind of a flying bird.
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                A dream you have will come true.
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                You can make your own happiness.
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                Conquer your fears or they will conquer you.
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                Never upset the driver of the car you're in; 
+                <br/>
+                they're the master of your destiny until you get home.
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                Good things take time
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                Find a peaceful place where you can make plans for the future.
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                The cure for grief is motion.
+            </div>
+        </div>
+        <var><div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                You are not a ghost.
+            </div>
+        </div></var>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                Your worst enemy has a crush on you!
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                Never cut what you can untie.
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                This is really a lovely day. Congratulations!
+            </div>
+        </div>
+        <div class ="fortune_cookie">
+            <img src="assets/cookie1.png" class = "cookie1"/>
+            <img src="assets/cookie2.png" class = "cookie2"/>
+            <div class="fortune">
+                If you eat a box of fortune cookies, anything is possible.
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+  
+</body>
+</html>
