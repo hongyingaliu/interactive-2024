@@ -24,3 +24,8 @@ body {
 .photo {
     width: 0px;
 }
+
+#text {
+    width: 60vw;
+    max-width:600px;
+}
