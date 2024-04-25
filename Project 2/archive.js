@@ -4,7 +4,7 @@ images.push("images/postie-cover.png")
 images.splice(0, 0, "images/IMG_6865.jpg")
 images.splice(3, 0, "images/IMG_1336.jpg")
 images.splice(3, 0, "images/IMG_1837.jpg")
-images.splice(5, 0, "images/IMG_4242.jpg")
+images.splice(6, 0, "images/IMG_4242.jpg")
 
 const imageGallery = document.getElementById("image-gallery")
 
