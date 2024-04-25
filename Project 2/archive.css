@@ -1,0 +1,26 @@
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/wall.jpeg');
+    background-size: cover;
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1.2fr)); /* Adjust the width of columns as needed */
+    grid-gap: 60px;
+    padding: 20px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.postie {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.photo {
+    width: 0px;
+}

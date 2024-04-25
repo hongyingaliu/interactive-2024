@@ -1,22 +1,35 @@
 body {
     overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/wall.jpeg');
+    background-size: cover;
 }
 
 #link-text {
     position: absolute;
-    bottom: 20vh;
+    bottom: 22vh;
+    z-index: 0;
+}
+
+#link-zoe {
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    cursor: pointer;
 }
 
 #archive {
     width: 180px;
     cursor: pointer;
+    z-index: -2;
 }
 
 #hi-zoe {
     width: 200px;
-    position: absolute;
-    top: 20px;
-    left: 10%;
+    /* position: absolute; */
+    /* top: 20px;
+    left: 10%; */
 }
 
 #heart-alana {
@@ -30,9 +43,17 @@ body {
     position: absolute;
     /* left: 0px;
     top: 10vh; */
-    width: 200px;
-    height:200px;
+    width: 220px;
+    height:220px;
     cursor:pointer;
+}
+
+.photo {
+    position: absolute;
+    width: auto;
+    height: 180px;
+    border: 8px solid white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 #image-gallery {
@@ -44,7 +65,7 @@ body {
     /* margin: auto; */
     position: relative;
     height: 70vh;
-    margin-top: 200px;;
+    margin-top: 30vh;;
     /* width: 100vw; */
 }
 
@@ -61,6 +82,52 @@ body {
 #cover {
     z-index: 2;
 }
+
+.sticker {
+    width: 70px;
+    position: absolute;
+    z-index: 0;
+}
+
+#horse {
+    top: 160px;
+    right: 12%;
+    transform:rotate(-10deg);
+    width: 90px;
+}
+
+#pstar {
+    bottom: 160px;
+    left: 18%;
+    transform:rotate(10deg);
+}
+
+#astar {
+    top: 200px;
+    right: 2%;
+}
+
+#gstar {
+    top: 20px;
+    left: 42%;
+    transform:rotate(-10deg);
+}
+
+/* @keyframes draw {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+.cls-1 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 5s linear forwards;
+    animation-iteration-count: infinite;
+} */
 
 /* .image-gallery {
     display: flex;
