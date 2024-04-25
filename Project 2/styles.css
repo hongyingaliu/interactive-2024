@@ -1,0 +1,70 @@
+body {
+    overflow: hidden;
+}
+
+#link-text {
+    position: absolute;
+    bottom: 20vh;
+}
+
+#archive {
+    width: 180px;
+    cursor: pointer;
+}
+
+#hi-zoe {
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 10%;
+}
+
+#heart-alana {
+    width: 200px;
+    position: absolute;
+    bottom: 20px;
+    right: 10%;
+}
+
+.postie {
+    position: absolute;
+    /* left: 0px;
+    top: 10vh; */
+    width: 200px;
+    height:200px;
+    cursor:pointer;
+}
+
+#image-gallery {
+    display:flex;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    justify-content: flex-start;
+    /* margin: auto; */
+    position: relative;
+    height: 70vh;
+    margin-top: 200px;;
+    /* width: 100vw; */
+}
+
+#container {
+    display:flex;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    justify-content: center;
+    /* margin: auto; */
+    position: relative; 
+}
+
+#cover {
+    z-index: 2;
+}
+
+/* .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-between;
+} */

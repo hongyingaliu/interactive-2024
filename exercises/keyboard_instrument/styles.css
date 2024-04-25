@@ -1,0 +1,82 @@
+.xl-type {
+  font-size: 100px;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  background: black;
+}
+
+#roof {
+  width: 0; 
+  height: 0; 
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-bottom: 200px solid white;
+}
+
+#wall {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+}
+
+.window {
+  position: absolute;
+  background-color:aqua;
+  z-index: 10;
+}
+
+#text {
+  color: white;
+}
+
+#text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Add this line to horizontally center */
+  flex-direction: column;
+  margin: 0 auto; /* Instead of using margin-left and margin-right */
+  width: fit-content;
+  margin-top: 2vh;
+}
+
+#left1 {
+  width: 100px;
+  height: 120px;
+  left: 80px;
+  top: 60px;
+}
+
+#left2 {
+  width: 100px;
+  height: 120px;
+  left: 80px;
+  top: 220px;
+}
+
+#right1 {
+  width: 100px;
+  height: 120px;
+  left: 220px;
+  top: 60px;
+}
+
+#right2 {
+  width: 100px;
+  height: 120px;
+  left: 220px;
+  top: 220px;
+}
+
+#house {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Add this line to horizontally center */
+  flex-direction: column;
+  margin: 0 auto; /* Instead of using margin-left and margin-right */
+  width: fit-content;
+  margin-top: 6vh;
+}
