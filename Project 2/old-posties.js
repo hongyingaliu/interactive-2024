@@ -28,3 +28,13 @@ for (var i = 0; i < images.length; i++) {
     // Append the img element to the div
     imageGallery.appendChild(img);
 }
+
+function changeback() {
+    var img = document.getElementById('return');
+    img.src = 'images/return-hover.png';
+}
+
+function restoreback() {
+    var img = document.getElementById('return');
+    img.src = 'images/return.png';
+}

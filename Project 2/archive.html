@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Archive</title>
     <link rel="stylesheet" href="archive.css">
-    
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
     <div id="container">
-        <img src="images/past-stickies.png" alt="past stickies" id="text"></img>
-        <a href="index.html">Back</a>
+        <div id="top row">
+            <a href="index.html">
+                <img src="images/return.png" alt="return" id="return"
+                onmouseover="changeback()" onmouseout="restoreback()">
+            </a>
+            <img src="images/past-stickies.png" alt="past stickies" id="text"></img>
+        </div>
         <div id="image-gallery"> 
         </div>
     </div>

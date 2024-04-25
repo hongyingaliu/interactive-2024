@@ -8,7 +8,7 @@ body {
 
 #image-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1.2fr)); /* Adjust the width of columns as needed */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1.2fr)); /* Adjust the width of columns as needed */
     grid-gap: 60px;
     padding: 20px;
     margin-left: 5px;
@@ -26,6 +26,32 @@ body {
 }
 
 #text {
-    width: 60vw;
-    max-width:600px;
+    height: 20vw;
+    max-height: 120px;
+    /* position:absolute; */
+}
+
+#return {
+    height: 20vw;
+    max-height: 120px;
+    /* padding-bottom: 12vw; */
+    /* position:absolute; */
+    /* padding-top: 8vw; */
+}
+
+#top-row {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-around; /* Distribute space evenly between items */
+    width: 100vw;
+    height: fit-content;
+    
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
 }

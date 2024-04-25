@@ -53,13 +53,37 @@
         right: 10%;
         width: 200px;
     }
+    #link {
+        position: absolute;
+        top:10px;
+        z-index:2;
+    }
+    #return {
+        height: 20vw;
+        max-height: 120px;
+    }
 
 </style>
 <body>
+    <a href="index.html" id="link">
+        <img src="images/return.png" alt="return" id="return"
+        onmouseover="changeback()" onmouseout="restoreback()">
+    </a>
     <div id="container">
         <img src="images/to-zoe.png" alt="To Zoe," id="to-zoe"></img>
     </div>
     <img src="images/IMG_2295.jpg" alt="picture of young zoe and Alana" id="kids"></img>
     <img src="images/heart-alana.png" alt="Love Alana," id="heart-alana"></img>
+    <script>
+        function changeback() {
+            var img = document.getElementById('return');
+            img.src = 'images/return-hover.png';
+        }
+
+        function restoreback() {
+            var img = document.getElementById('return');
+            img.src = 'images/return.png';
+        }
+    </script>
 </body>
 </html> 
