@@ -9,8 +9,8 @@ function dragStart(event) {
     // Calculate the offset between mouse position and element position
     offsetX = event.clientX - currentImg.offsetLeft;
     offsetY = event.clientY - currentImg.offsetTop;
-    console.log(offsetX);
-    console.log("start");
+    // console.log(offsetX);
+    // console.log("start");
 
     // Attach event listeners for mouse move and mouse up events
     // document.addEventListener('mousemove', function(event){
