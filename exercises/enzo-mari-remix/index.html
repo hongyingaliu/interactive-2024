@@ -5,37 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Enzo Mari redux</title>
+    <title>My meals (Enzo Mari Remix)</title>
     <style>
+        body {
+            background-color: deeppink;
+        }
         img {
             max-width: 100%;
-            cursor: pointer;
+            cursor: url('images/fork.png') 10 10, pointer;
+            margin: 10px;
         }
 
-        img:hover {
+        /* img:hover {
             filter: hue-rotate(90deg);
-        }
+        } */
 
         div {
             display:inline-block;
+            padding: 10px;
+        }
+
+        h1, h2 {
+            padding: 10px;
+            padding-bottom: 20px;
+            margin: 10px;
+            color: antiquewhite;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
     </style>
 </head>
 
 <body>
-    <div class="credit">This website is based on the design of the <a href="https://enzomari.com/">Enzo Mari archive</a> by <a href="https://jon-l.com/">Jon Lucas</a>.</div>
-    
+    <h1> Meals I've had this year</h1>
+    <div id="image-gallery"></div>
     <script>
         // define your "batch of images" in an array
        var images = [
-                "<img src='images/horse_1.jpg'>",
-                "<img src='images/horse_2.jpg'>",
-                "<img src='images/horse_3.jpg'>",
-                "<img src='images/horse_4.jpg'>",
-                "<img src='images/horse_5.jpg'>",
-                "<img src='images/horse_6.jpg'>",
-                "<img src='images/horse_7.jpg'>",
-                "<img src='images/horse_8.jpg'>",
+                "<img src='images/food1.JPG'>",
+                "<img src='images/food2.JPG'>",
+                "<img src='images/food3.JPG'>",
+                "<img src='images/food4.JPG'>",
+                "<img src='images/food5.JPG'>",
+                "<img src='images/food6.JPG'>",
+                "<img src='images/food7.JPG'>",
+                "<img src='images/food8.JPG'>",
+                "<img src='images/food9.JPG'>",
+                "<img src='images/food10.JPG'>",
+                "<img src='images/food11.JPG'>",
+                "<img src='images/food12.JPG'>",
+                "<img src='images/food13.JPG'>"
             ]
 
         // this function randomly picks an image from the batch
@@ -54,7 +72,7 @@
 
             // these two lines pick a random width for the image.
             // 300 is the MAX width, and 100 is the MIN width.
-            var random_width = Math.floor(Math.random() * (300 - 100 + 1) + 100);
+            var random_width = Math.floor(Math.random() * (300 - 200 + 1) + 200);
             var random_width_pixels = random_width + "px";
 
             // assign that random width to the new image
@@ -62,6 +80,11 @@
 
             // add the new image to the document's body (so it's visible!)
             document.body.prepend(new_image);
+            if (random_image() == 1 || random_image() == 5 | random_image() == 10) {
+                var new_text = document.createElement('div');
+                new_text.innerHTML = "<h2>Yum!</h2>";
+                document.body.prepend(new_text);
+            }
 
             // last step! set up the click. 
             // You want your image to 'listen' for clicks. When its clicked, it adds a new image.

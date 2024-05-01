@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(51, 73, 101);
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.quote-container {
+    width: 400px; /* Adjust this width as needed */
+    /* background-color: #f0f0f0; */
+    padding: 20px;
+    text-align: center;
+    color: rgb(62, 92, 131);
+    transition: color 1s ease;
+}
+
+.quote-container:hover {
+    color:rgb(177, 180, 236);
+}
+
+.quote {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+img {
+    width: 400px;
+    position: relative;
+}
+
+#click {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    text-align: center;
+    bottom: 10%;
+    color: rgb(47, 123, 68);
+}
