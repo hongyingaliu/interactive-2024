@@ -23,7 +23,7 @@ function generateImageList(startDate) {
 }
 
 // Example usage:
-const startDate = new Date('2024-04-22'); // Example start date
+const startDate = new Date('2024-04-30'); // Example start date
 var images = generateImageList(startDate);
 console.log(images); // Output the list of image names
 
