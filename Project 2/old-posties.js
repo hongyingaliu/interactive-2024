@@ -1,5 +1,5 @@
 const imageGallery = document.getElementById("image-gallery")
-const permStartDate = new Date('2024-04-21'); // Example start date
+const permStartDate = new Date('2024-06-21'); // Example start date
 images = generateImageList(permStartDate);
 
 // assuming everything is within the year
